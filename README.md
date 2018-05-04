@@ -37,9 +37,14 @@ Click Upgrade to update VMSS cluster and wait for latest model (Yes).
 (VMSS is created as manual upgrade mode via )
 
 ## Check running application
-Run browser with VMSS ipaddress
-http://[vmss-ip]
+
+Run browser with VMSS ipaddress http://[vmss-ip]
 
 You will get simple homepage.
 ![http](media/web.png)
 
+## Running update
+
+Now you can update script. VSTS will run deployment automatically (Build and Release). Check VMSS, there are instances not updated to latest. Run updade to latest.
+
+TODO: Issue, update never is finished
