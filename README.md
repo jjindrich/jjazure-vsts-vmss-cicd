@@ -47,4 +47,8 @@ You will get simple homepage.
 
 Now you can update script. VSTS will run deployment automatically (Build and Release). Check VMSS, there are instances not updated to latest. Run updade to latest.
 
-TODO: Issue, update never is finished
+If you want to update VMSS to latest model automatically, change Upgrade policy to Automatic.
+
+```bash
+az vmss update --set upgradePolicy.mode=Automatic -g <resource group name> -n <vmss name>
+```
